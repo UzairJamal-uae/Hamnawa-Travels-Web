@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-nature-50: #f0fdf4;
+  --color-nature-100: #dcfce7;
+  --color-nature-200: #bbf7d0;
+  --color-nature-300: #86efac;
+  --color-nature-400: #4ade80;
+  --color-nature-500: #22c55e;
+  --color-nature-600: #16a34a;
+  --color-nature-700: #15803d;
+  --color-nature-800: #166534;
+  --color-nature-900: #14532d;
+  
+  --color-earth-50: #fdf8f6;
+  --color-earth-100: #f2e8e5;
+  --color-earth-200: #eaddd7;
+  --color-earth-300: #e0cec7;
+  --color-earth-400: #d2bab0;
+  --color-earth-500: #bfa094;
+  --color-earth-600: #a18072;
+  --color-earth-700: #846358;
+  --color-earth-800: #674a40;
+  --color-earth-900: #4b352d;
+}
+
+@layer base {
+  body {
+    @apply bg-nature-50 text-earth-900 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .broken-paper-edge {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L0,100 L1000,100 L1000,0 L950,20 L900,5 L850,25 L800,10 L750,30 L700,15 L650,35 L600,20 L550,40 L500,25 L450,45 L400,30 L350,50 L300,35 L250,55 L200,40 L150,60 L100,45 L50,65 L0,50 Z' fill='%23000'/%3E%3C/svg%3E");
+    mask-size: 100% 100%;
+  }
+  
+  .broken-paper-edge-bottom {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,100 L0,0 L1000,0 L1000,100 L950,80 L900,95 L850,75 L800,90 L750,70 L700,85 L650,65 L600,80 L550,60 L500,75 L450,55 L400,70 L350,50 L300,65 L250,45 L200,60 L150,40 L100,55 L50,35 L0,50 Z' fill='%23000'/%3E%3C/svg%3E");
+    mask-size: 100% 100%;
+  }
+}
