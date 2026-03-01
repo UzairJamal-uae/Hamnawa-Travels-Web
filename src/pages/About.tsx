@@ -37,7 +37,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-6 bg-nature-800 rounded-[3rem] rotate-3"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1527230249027-5ae5bd5ddafc?auto=format&fit=crop&q=80&w=800" 
+                  src="https://pakrism.pk/wp-content/uploads/2024/05/Group-tour-3-min.jpeg" 
                   alt="Hamnawa Experience" 
                   className="relative z-10 rounded-[3rem] shadow-2xl"
                   referrerPolicy="no-referrer"
